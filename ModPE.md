@@ -1,6 +1,6 @@
 # ModPE
 
-ModPE 是 zhuoweizhang 的启动器为 MinecraftPE 添加扩展而使用的的语言，起本质是 Rhino(JavaScript) 。本 mod 的灵感由此而发。
+ModPE 是 zhuoweizhang 的启动器为 MinecraftPE 添加扩展而使用的的语言，其本质是 Rhino(JavaScript) 。本 mod 的灵感由此而发。
 
 并因为其简易的实现方法，对其作出了部分适配，来方便 programers 更方便的编写 mod.
 
