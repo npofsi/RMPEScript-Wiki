@@ -45,11 +45,11 @@ var callback=new _RMPE.broadcast.ForgeEventHandler.EventCallback({
 ```
 然后就可以注册这个回调（pickupItem处即事件名称）：
 ```
-_RMPE.broadcast.ForgeEventHandler.registerCallback("pickupItem",callback)
+_RMPE.broadcast.ForgeEventHandler.getInstance().registerCallback("pickupItem",callback)
 ```
 之后可以选择性注销这个回调（注意也需要写事件的名称）：
 ```
-_RMPE.broadcast.ForgeEventHandler.unregisterCallback("pickupItem",callback)
+_RMPE.broadcast.ForgeEventHandler.getInstance().unregisterCallback("pickupItem",callback)
 ```
 
 ### MinecraftEvent事件列表（这里不需要解释了吧）
