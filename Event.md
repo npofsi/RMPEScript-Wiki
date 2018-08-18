@@ -17,13 +17,13 @@ var callback=new _RMPE.broadcast.FMLEventHandler.FMLEventCallback({
     }
 })
 ```
-然后就可以注册这个回调（init处即事件名称）：
+然后就可以注册这个回调（ `init` 处即事件名称,在 r1.0.0 版本中不需要`.getInstance()`）：
 ```
-_RMPE.broadcast.FMLEventHandler.registerCallback("init",callback)
+_RMPE.broadcast.FMLEventHandler.getInstance().registerCallback("init",callback)
 ```
 之后可以选择性注销这个回调（注意也需要写事件的名称）：
 ```
-_RMPE.broadcast.FMLEventHandler.unregisterCallback("init",callback)
+_RMPE.broadcast.FMLEventHandler.getInstance().unregisterCallback("init",callback)
 ```
 ### FML事件列表：
 * init：forge加载mod时触发
