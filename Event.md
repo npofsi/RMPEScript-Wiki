@@ -43,7 +43,7 @@ var callback=new _RMPE.broadcast.ForgeEventHandler.EventCallback({
     }
 })
 ```
-然后就可以注册这个回调（pickupItem处即事件名称）：
+然后就可以注册这个回调（ `pickupItem` 处即事件名称）：
 ```
 _RMPE.broadcast.ForgeEventHandler.getInstance().registerCallback("pickupItem",callback)
 ```
