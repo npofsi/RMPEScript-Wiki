@@ -25,7 +25,13 @@ var commandIns=new _RMPE.command.CommandInstance("boom","/boom",commandCallback)
 ## 注册
 
 建立一个命令实例后需要注册，但只有加载存档后才能注册，所以需要一个事件监听：
-
+```
+_RMPE.broadcast.FMLEventHandler.getInstance().registerCallback("serverStarting",new _RMPE.broadcast.FMLEventHandler.FMLEventCallback({
+	"call":function(event){
+		_RMPE.command.CommandManager.getInstance().register(commandIns);
+	}
+}));
+```
 
 
 
