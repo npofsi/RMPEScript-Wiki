@@ -13,6 +13,9 @@ ModPE 分好多功能模块，使用过程式的编写思想，但这并不影�
     showTipMessage(String message)
 
 ### Level.
+    setWorld(World world) //设定当前Level类所作用的存档
+    getWorld() //获取当前Level类所作用的存档
     explode(double x, double y, double z, double r, boolean isSmoking)
     explode(double x, double y, double z, double r)
     setTile(double x,double y,double z,String id,int data)
+    
