@@ -1,11 +1,9 @@
 # Table of contents
 
-
 * [Introduction](README.md)
-* [Home](Home.md)
-* [Control](Control.md)
-* [Command](Command.md)
-* [Event](Event.md)
-* [ModPE](ModPE.md)
-
+* [Home](home.md)
+* [Control](control.md)
+* [Command](command.md)
+* [Event](event.md)
+* [ModPE](modpe.md)
 

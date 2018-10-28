@@ -5,19 +5,21 @@
 ## 回调
 
 用户使用命令后执行（example）：
-```
+
+```text
 var commandCallback=new _RMPE.command.CommandInstance.Callback({
-	"execute":function(server,sender,args){
+    "execute":function(server,sender,args){
                 //TODO
-		Level.explode(sender.posX,sender.posY,sender.posZ,10);
-	}
+        Level.explode(sender.posX,sender.posY,sender.posZ,10);
+    }
 });
 ```
 
 ## 实例
 
 建立一个回调后需要把回调包装成一个命令实例：
-```
+
+```text
 // 参数: 指令名, 用法, 回调
 var commandIns=new _RMPE.command.CommandInstance("boom","/boom",commandCallback);
 ```
@@ -25,17 +27,16 @@ var commandIns=new _RMPE.command.CommandInstance("boom","/boom",commandCallback)
 ## 注册
 
 建立一个命令实例后需要注册，但只有加载存档后才能注册，所以需要一个事件监听：
-```
+
+```text
 _RMPE.broadcast.FMLEventHandler.getInstance().registerCallback("serverStarting",new _RMPE.broadcast.FMLEventHandler.FMLEventCallback({
-	"call":function(event){
-		_RMPE.command.CommandManager.getInstance().register(commandIns);
-	}
+    "call":function(event){
+        _RMPE.command.CommandManager.getInstance().register(commandIns);
+    }
 }));
 ```
 
-
-
-
-
 ## 例子
+
 [example/CommandBoom.js](https://github.com/npofsi/RMPEScript/blob/master/examples/CommandBoom.js)
+
