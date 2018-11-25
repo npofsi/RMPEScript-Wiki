@@ -6,7 +6,7 @@
 
 用户使用命令后执行（example）：
 
-```text
+```javascript
 var commandCallback=new _RMPE.command.CommandInstance.Callback({
     "execute":function(server,sender,args){
                 //TODO
@@ -19,7 +19,7 @@ var commandCallback=new _RMPE.command.CommandInstance.Callback({
 
 建立一个回调后需要把回调包装成一个命令实例：
 
-```text
+```javascript
 // 参数: 指令名, 用法, 回调
 var commandIns=new _RMPE.command.CommandInstance("boom","/boom",commandCallback);
 ```
@@ -28,7 +28,7 @@ var commandIns=new _RMPE.command.CommandInstance("boom","/boom",commandCallback)
 
 建立一个命令实例后需要注册，但只有加载存档后才能注册，所以需要一个事件监听：
 
-```text
+```javascript
 _RMPE.broadcast.FMLEventHandler.getInstance().registerCallback("serverStarting",new _RMPE.broadcast.FMLEventHandler.FMLEventCallback({
     "call":function(event){
         _RMPE.command.CommandManager.getInstance().register(commandIns);

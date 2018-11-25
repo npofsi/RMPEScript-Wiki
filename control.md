@@ -2,8 +2,8 @@
 
 这部分是用来解释如何在游戏中修改 RMPEScript 运行状态
 
-```text
-/rmpe <operater> [args...]
+```bash
+/rmpe <operater> [args..]
 ```
 
 以下即为现有的 operators
@@ -15,4 +15,8 @@
 ## status
 
 显示所有运行着的脚本的状态
+
+## run &lt;code&gt;
+
+直接运行 code 代码
 

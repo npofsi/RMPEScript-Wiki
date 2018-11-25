@@ -8,23 +8,45 @@ ModPE 分好多功能模块，使用过程式的编写思想，但这并不影�
 
 ## Global.
 
-```text
-clientMessage(String message)
+```java
+void clientMessage(String message)
+World getLevel()
 ```
 
 ## ModPE.
 
-```text
-showTipMessage(String message)
+```java
+void showTipMessage(String message)
+void log(String log)
+String getLanguage()
+String getMinecraftVersion()
+void leaveGame()
+void showTipMessage(String message)
 ```
 
 ## Level.
 
-```text
-setWorld(World world) //设定当前Level类所作用的存档
-getWorld() //获取当前Level类所作用的存档
-explode(double x, double y, double z, double r, boolean isSmoking)
-explode(double x, double y, double z, double r)
-setTile(double x,double y,double z,String id,int data)
+```java
+void setWorld(World world) //设定当前Level类所作用的存档
+World getWorld() //获取当前Level类所作用的存档
+void explode(double x, double y, double z, double r, boolean isSmoking)
+void explode(double x, double y, double z, double r)
+void setTile(double x,double y,double z,String id,int data)
+int getDifficulty()
+```
+
+## Player.
+
+```java
+void setPlayer(EntityPlayer player)
+EntityPlayer getPlayer()
+double getX()
+double getY()
+double getZ()
+float getExp()
+World getLevel()
+double getPitch()
+double getYaw()
+EntityPlayer getEntity()
 ```
 
