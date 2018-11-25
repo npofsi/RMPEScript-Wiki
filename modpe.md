@@ -11,6 +11,12 @@ ModPE 分好多功能模块，使用过程式的编写思想，但这并不影�
 ```java
 void clientMessage(String message)
 World getLevel()
+EntityPlayer getPlayerEnt()
+double getPlayerX()
+double getPlayerY()
+double getPlayerZ()
+void setPosition(double x,double y,double z)
+void setPositionRelative(double dx,double dy,double dz)
 ```
 
 ## ModPE.
@@ -22,23 +28,24 @@ String getLanguage()
 String getMinecraftVersion()
 void leaveGame()
 void showTipMessage(String message)
+
 ```
 
 ## Level.
 
 ```java
-void setWorld(World world) //设定当前Level类所作用的存档
-World getWorld() //获取当前Level类所作用的存档
+void setWorld(World world) //设定当前 Level 类所作用的存档(使用该类的前提方法)
+World getWorld() //获取当前 Level 类所作用的存档
+int getDifficulty()
 void explode(double x, double y, double z, double r, boolean isSmoking)
 void explode(double x, double y, double z, double r)
 void setTile(double x,double y,double z,String id,int data)
-int getDifficulty()
 ```
 
 ## Player.
 
 ```java
-void setPlayer(EntityPlayer player)
+void setPlayer(EntityPlayer player)//使用该类的前提方法
 EntityPlayer getPlayer()
 double getX()
 double getY()
@@ -47,6 +54,14 @@ float getExp()
 World getLevel()
 double getPitch()
 double getYaw()
+int getDimension()void setPosition(double x,double y,double z)
 EntityPlayer getEntity()
+String getInventorySlot(int index)
+int getInventorySlotCount(int index)
+int getInventorySlotData(int index)
+int getScore()
+void setHealth(int hp)
+void setPositionRelative(double x,double y,double z)
+void setPosition(double x,double y,double z)
 ```
 
